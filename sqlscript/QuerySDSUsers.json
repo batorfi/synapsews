@@ -1,0 +1,17 @@
+{
+	"name": "QuerySDSUsers",
+	"properties": {
+		"content": {
+			"query": "SELECT\n    TOP 100 *\nFROM\n    OPENROWSET(\n            BULK 'schoolmodell/2021_2022/users.csv',\n            DATA_SOURCE = 'EU2KLake',\n            FORMAT='CSV',\n            PARSER_VERSION='2.0'\n    ) AS [result]\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "EU2KDataExplorationDB",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

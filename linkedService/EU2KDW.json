@@ -1,0 +1,12 @@
+{
+	"name": "EU2KDW",
+	"type": "Microsoft.Synapse/workspaces/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "PowerBIWorkspace",
+		"typeProperties": {
+			"workspaceID": "0c700ac9-7fd7-47ae-ac7f-157a72b2871f",
+			"tenantID": "587acb4b-a042-4377-919f-525d2252cbc6"
+		}
+	}
+}

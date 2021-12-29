@@ -1,0 +1,22 @@
+{
+	"name": "DestinationDataset_1gg",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "eu2ksynapsews-WorkspaceDefaultStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "users.parquet",
+				"folderPath": "data",
+				"fileSystem": "eu2kdw"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

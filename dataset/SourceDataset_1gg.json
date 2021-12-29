@@ -1,0 +1,50 @@
+{
+	"name": "SourceDataset_1gg",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "eu2ksynapsews-WorkspaceDefaultStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "users.csv",
+				"folderPath": "2021_2022",
+				"fileSystem": "schoolmodell"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "sourcedId",
+				"type": "String"
+			},
+			{
+				"name": "username",
+				"type": "String"
+			},
+			{
+				"name": "activeDirectoryMatchId",
+				"type": "String"
+			},
+			{
+				"name": "email",
+				"type": "String"
+			},
+			{
+				"name": "phone",
+				"type": "String"
+			},
+			{
+				"name": "sms",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}
