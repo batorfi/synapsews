@@ -272,7 +272,7 @@
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
 				"content": {
-					"query": "SELECT\n    TOP 100 *\nFROM\n    OPENROWSET(\n            BULK 'schoolmodell/2021_2022/users.csv',\n            DATA_SOURCE = 'EU2KLake',\n            FORMAT='CSV',\n            PARSER_VERSION='2.0'\n    ) AS [result]\n",
+					"query": "SELECT\n    TOP 100 *\nFROM\n    OPENROWSET(\n            BULK 'schoolmodell/2021_2022/users.csv',\n            DATA_SOURCE = 'EU2KLake',\n            FORMAT='CSV',\n            PARSER_VERSION='2.0'\n    ) AS [result]\nGO\n",
 					"metadata": {
 						"language": "sql"
 					},
